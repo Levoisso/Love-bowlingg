@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Bowling 💗</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- START PAGE -->
+<div id="startContainer" class="container">
+  <h1>💘 Love Bowling 💘</h1>
+  <p class="subtitle">Hit the hearts & win my heart 💗</p>
+  <button id="startBtn">Start Game 🎯</button>
+</div>
+
+<!-- GAME PAGE -->
+<div id="gameContainer" class="container" style="display:none;">
+
+  <div class="game-area">
+    <div class="pins">
+      <div class="pin"></div>
+      <div class="pin"></div>
+      <div class="pin"></div>
+      <div class="pin"></div>
+      <div class="pin"></div>
+    </div>
+
+    <div id="ball">💗</div>
+  </div>
+
+  <button id="shootBtn">Shoot 🎯</button>
+
+  <p id="score">Score: 0</p>
+
+  <div id="message"></div>
+
+  <!-- LETTER PAGE (Hidden) -->
+  <div id="letterContainer" style="display:none;">
+    <p> Hey [bedo],</p>
+    <p>I made this game just for you 💕. I hope it made you smile </p>
+    <p>Love, [Your Name]</p>
+    <button id="closeLetter">Close ❤️</button>
+  </div>
+
+</div>
+
+<!-- Floating hearts -->
+<div class="hearts"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
