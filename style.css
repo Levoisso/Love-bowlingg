@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #fff, #ffd6e8);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(255,105,180,0.3);
+  position: relative;
+}
+
+h1 {
+  color: #ff4d88;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.game-area {
+  position: relative;
+  height: 250px;
+  background: #fff0f6;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 2px solid #ffb6d5;
+}
+
+.pins {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.pin {
+  width: 30px;
+  height: 60px;
+  background: pink;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255,0,120,0.3);
+}
+
+#ball {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 35px;
+  transition: all 0.8s ease;
+}
+
+button {
+  background: #ff4d88;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff1f6a;
+}
+
+#score {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+#message {
+  margin-top: 15px;
+  color: #ff4d88;
+  font-size: 16px;
+}
+
+/* Floating hearts */
+.hearts span {
+  position: absolute;
+  color: pink;
+  font-size: 20px;
+  animation: float 6s linear infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-10vh);
+    opacity: 1;
+  }
+}
+
+/* Letter container styling */
+#letterContainer {
+  background: #fff0f6;
+  border: 2px solid #ffb6d5;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+#letterContainer button {
+  margin-top: 10px;
+  background: #ff4d88;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
